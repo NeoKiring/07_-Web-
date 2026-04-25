@@ -1,0 +1,31 @@
+task_id: I-001
+title: "monorepo skeleton (pnpm workspace + root configs)"
+area: "infra/monorepo"
+slug: "monorepo-skeleton"
+batch_id: "BATCH-WAVE0"
+state: ready-for-impl
+harness_version: "4.1-p0-tool-ownership"
+
+tool: "codex"
+current_lane: "parent-dispatcher"
+owner: ""
+
+default_tool_owner: "codex"
+allowed_alternate_tool: "claude"
+
+implementation_branch: "ai/infra/monorepo/I-001-monorepo-skeleton"
+impl_worktree: ".worktrees/I-001__impl"
+inspection_worktree: ""
+head_commit: ""
+
+pinned_review_commit: ""
+pinned_verify_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: not-required
+runtime_status: not-started
+
+blocked_reason: ""
+exact_next_action: "scripts/harness/new-impl-lane.sh I-001 infra/monorepo monorepo-skeleton main  (see docs/ai/tasks/I-001/launch.md)"
+last_updated: "2026-04-24T04:46:24+00:00"

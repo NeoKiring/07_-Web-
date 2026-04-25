@@ -1,0 +1,33 @@
+task_id: I-005
+title: "apps/web UI stack (Tailwind v4 + shadcn/ui + Tremor + theming)"
+area: "apps/web/ui"
+slug: "apps-web-ui-stack"
+batch_id: "BATCH-WAVE0"
+state: ready-for-impl
+harness_version: "4.1-p0-tool-ownership"
+
+tool: "codex"
+current_lane: "parent-dispatcher"
+owner: ""
+
+default_tool_owner: "codex"
+allowed_alternate_tool: "claude"
+gui_tool: "claude"
+
+implementation_branch: "ai/apps/web/ui/I-005-apps-web-ui-stack"
+impl_worktree: ".worktrees/I-005__impl"
+inspection_worktree: ""
+head_commit: ""
+
+pinned_review_commit: ""
+pinned_verify_commit: ""
+pinned_gui_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: required
+runtime_status: pending-allocation
+
+blocked_reason: "waiting for I-004 to be merged"
+exact_next_action: "after I-004 merged: allocate runtime (scripts/harness/alloc-runtime.sh I-005 impl) then scripts/harness/new-impl-lane.sh I-005 apps/web/ui apps-web-ui-stack main  (see docs/ai/tasks/I-005/launch.md and gui.md)"
+last_updated: "2026-04-24T04:46:24+00:00"

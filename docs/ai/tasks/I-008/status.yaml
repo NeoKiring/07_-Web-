@@ -1,0 +1,31 @@
+task_id: I-008
+title: "project-specific supplement document (CLAUDE.project.md)"
+area: "docs/project"
+slug: "docs-project-supplement"
+batch_id: "BATCH-WAVE0"
+state: ready-for-impl
+harness_version: "4.1-p0-tool-ownership"
+
+tool: "codex"
+current_lane: "parent-dispatcher"
+owner: ""
+
+default_tool_owner: "codex"
+allowed_alternate_tool: "claude"
+
+implementation_branch: "ai/docs/project/I-008-docs-project-supplement"
+impl_worktree: ".worktrees/I-008__impl"
+inspection_worktree: ""
+head_commit: ""
+
+pinned_review_commit: ""
+pinned_verify_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: not-required
+runtime_status: not-started
+
+blocked_reason: "waiting for I-001 to be merged"
+exact_next_action: "after I-001 merged (parallel with I-002..I-007): scripts/harness/new-impl-lane.sh I-008 docs/project docs-project-supplement main  (see docs/ai/tasks/I-008/launch.md)"
+last_updated: "2026-04-24T04:46:24+00:00"

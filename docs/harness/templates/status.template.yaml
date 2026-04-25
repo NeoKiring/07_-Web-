@@ -1,0 +1,25 @@
+task_id: <TASK_ID>
+title: ""
+area: ""
+slug: ""
+batch_id: ""
+state: planned
+harness_version: 4.0.0-p0
+
+tool: ""
+current_lane: ""
+owner: ""
+
+implementation_branch: ""
+impl_worktree: ""
+inspection_worktree: ""
+head_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: not-required
+runtime_status: not-started
+
+blocked_reason: ""
+exact_next_action: ""
+last_updated: ""

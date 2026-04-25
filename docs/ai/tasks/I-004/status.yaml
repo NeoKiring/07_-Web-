@@ -1,0 +1,31 @@
+task_id: I-004
+title: "apps/web initialization (Next.js App Router base)"
+area: "apps/web"
+slug: "apps-web-next-init"
+batch_id: "BATCH-WAVE0"
+state: ready-for-impl
+harness_version: "4.1-p0-tool-ownership"
+
+tool: "codex"
+current_lane: "parent-dispatcher"
+owner: ""
+
+default_tool_owner: "codex"
+allowed_alternate_tool: "claude"
+
+implementation_branch: "ai/apps/web/I-004-apps-web-next-init"
+impl_worktree: ".worktrees/I-004__impl"
+inspection_worktree: ""
+head_commit: ""
+
+pinned_review_commit: ""
+pinned_verify_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: not-required
+runtime_status: not-started
+
+blocked_reason: "waiting for I-003 to be merged"
+exact_next_action: "after I-003 merged: scripts/harness/new-impl-lane.sh I-004 apps/web apps-web-next-init main  (see docs/ai/tasks/I-004/launch.md)"
+last_updated: "2026-04-24T04:46:24+00:00"

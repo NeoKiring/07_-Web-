@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git worktree list:*)",
+      "Bash(pwsh -File scripts/harness/*:*)",
+      "Bash(bash scripts/harness/*:*)"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "env": {
+    "TASK_ID": "I-000",
+    "LANE": "impl",
+    "APP_INSTANCE_ID": "I-000-impl",
+    "APP_PORT": "4100",
+    "API_PORT": "5100",
+    "DB_PORT": "6100",
+    "USER_DATA_DIR": ".runtime/userdata/I-000_impl",
+    "LOG_DIR": ".runtime/logs/I-000_impl",
+    "TMP_DIR": ".runtime/tmp/I-000_impl"
+  }
+}

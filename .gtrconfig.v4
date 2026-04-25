@@ -1,0 +1,36 @@
+# .gtrconfig.v4
+# Rename to ".gtrconfig" when adopting.
+#
+# P0 intent:
+# - use git-worktree-runner for writable implementation lanes only
+# - keep copied artifacts safe and deterministic
+# - avoid copying real secrets
+# - bootstrap through project-aware helper scripts, not blind installs
+
+[copy]
+include = docs/ai/issues/**/*.md
+include = docs/ai/plans/**/*.md
+include = docs/ai/tasks/**/*.md
+include = docs/harness/**/*.md
+include = .env.example
+include = .env.worktree.template
+include = .claude/settings.local.example.json
+
+exclude = **/.env
+exclude = **/.env.local
+exclude = **/.env.*.local
+exclude = **/secrets/**
+exclude = **/dist/**
+exclude = **/build/**
+exclude = **/.next/**
+exclude = **/coverage/**
+exclude = **/*.log
+
+[hooks]
+# Use the helper scripts explicitly after lane creation.
+# Do not hide dependency installation in the runner hook.
+postCreate = echo "Run scripts/harness/bootstrap-worktree.ps1 or .sh explicitly for this lane"
+
+[defaults]
+editor = vscode
+ai = claude

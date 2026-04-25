@@ -1,0 +1,31 @@
+task_id: I-006
+title: "quality tooling (ESLint + Prettier + husky + lint-staged + commitlint)"
+area: "infra/quality"
+slug: "infra-quality-tooling"
+batch_id: "BATCH-WAVE0"
+state: ready-for-impl
+harness_version: "4.1-p0-tool-ownership"
+
+tool: "codex"
+current_lane: "parent-dispatcher"
+owner: ""
+
+default_tool_owner: "codex"
+allowed_alternate_tool: "claude"
+
+implementation_branch: "ai/infra/quality/I-006-infra-quality-tooling"
+impl_worktree: ".worktrees/I-006__impl"
+inspection_worktree: ""
+head_commit: ""
+
+pinned_review_commit: ""
+pinned_verify_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: not-required
+runtime_status: not-started
+
+blocked_reason: "waiting for I-005 to be merged"
+exact_next_action: "after I-005 merged: scripts/harness/new-impl-lane.sh I-006 infra/quality infra-quality-tooling main  (see docs/ai/tasks/I-006/launch.md)"
+last_updated: "2026-04-24T04:46:24+00:00"

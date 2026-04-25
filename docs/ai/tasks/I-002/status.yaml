@@ -1,0 +1,31 @@
+task_id: I-002
+title: "packages/types skeleton + TypeScript project references base"
+area: "packages/types"
+slug: "packages-types-skeleton"
+batch_id: "BATCH-WAVE0"
+state: ready-for-impl
+harness_version: "4.1-p0-tool-ownership"
+
+tool: "codex"
+current_lane: "parent-dispatcher"
+owner: ""
+
+default_tool_owner: "codex"
+allowed_alternate_tool: "claude"
+
+implementation_branch: "ai/packages/types/I-002-packages-types-skeleton"
+impl_worktree: ".worktrees/I-002__impl"
+inspection_worktree: ""
+head_commit: ""
+
+pinned_review_commit: ""
+pinned_verify_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: not-required
+runtime_status: not-started
+
+blocked_reason: "waiting for I-001 to be merged"
+exact_next_action: "after I-001 merged: scripts/harness/new-impl-lane.sh I-002 packages/types packages-types-skeleton main  (see docs/ai/tasks/I-002/launch.md)"
+last_updated: "2026-04-24T04:46:24+00:00"

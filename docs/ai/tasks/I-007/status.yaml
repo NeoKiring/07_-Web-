@@ -1,0 +1,31 @@
+task_id: I-007
+title: "GitHub Actions CI (typecheck / lint / vitest / playwright+axe scaffolding)"
+area: "infra/ci"
+slug: "infra-ci-actions"
+batch_id: "BATCH-WAVE0"
+state: ready-for-impl
+harness_version: "4.1-p0-tool-ownership"
+
+tool: "codex"
+current_lane: "parent-dispatcher"
+owner: ""
+
+default_tool_owner: "codex"
+allowed_alternate_tool: "claude"
+
+implementation_branch: "ai/infra/ci/I-007-infra-ci-actions"
+impl_worktree: ".worktrees/I-007__impl"
+inspection_worktree: ""
+head_commit: ""
+
+pinned_review_commit: ""
+pinned_verify_commit: ""
+
+review_verdict: pending
+verify_status: pending
+gui_status: not-required
+runtime_status: conditional
+
+blocked_reason: "waiting for I-006 to be merged"
+exact_next_action: "after I-006 merged: scripts/harness/new-impl-lane.sh I-007 infra/ci infra-ci-actions main; local e2e execution requires runtime allocation (APP_PORT)  (see docs/ai/tasks/I-007/launch.md)"
+last_updated: "2026-04-24T04:46:24+00:00"
